@@ -4,7 +4,10 @@ import {Nav,Navbar,NavDropdown} from "react-bootstrap"
 import { HashLink } from 'react-router-hash-link';
 import facebook from '../Images/facebook.png'
 import instagram from '../Images/instagram.png'
-import linkedin from '../Images/linkedin.png'
+import tiktok from '../Images/tiktok.png'
+import navIcon1 from "../Images/nav-icon1.svg";
+import navIcon2 from "../Images/nav-icon2.svg";
+import navIcon3 from "../Images/nav-icon3.svg";
 import logo from '../Images/logomain2.png'
 import {
   BrowserRouter as Router
@@ -62,9 +65,9 @@ function NavBar() {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a href='#'><img src={facebook} alt=""/></a>
-              <a href='#'><img src={instagram} alt=""/></a>
-              <a href='#'><img src={linkedin} alt=""/></a>
+              <a href='https://www.facebook.com/ibrahim19BBI' target="_blank"><img src={navIcon2} alt=""/></a>
+              <a href='https://www.instagram.com/ibbibhai/' target="_blank"> <img src={navIcon3} alt=""/></a>
+              <a href='https://www.tiktok.com/@_ibbibhai' target="_blank"><img src={tiktok} alt=""/></a>
             </div>
             <HashLink to='#connect'>
             <button className="vvd"><span>Let’s Connect</span></button>

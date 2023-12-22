@@ -20,8 +20,8 @@ export const Projects = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
                   <p>
-                  Hey there! As a Content Creator with over 180K followers on social media,Level 1 seller on Fiver and a Youtube automation expert who has helped 10+ big channels grow! 
-                  <br></br>I believe that with my expertise in video editing, I am confident that together we can take your videos to greater heights!
+                  Now in my years of over 4+ yrs in editing Videos <br></br> I have almost edited all sorts of genre.
+                  So have a look at some of the best videos I have edited for my clients!
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
                     <Nav

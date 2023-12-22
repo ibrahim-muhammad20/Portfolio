@@ -4,6 +4,8 @@ import Navbar from './Components/Navbar';
 import { Banner } from './Components/Banner';
 import Skill from './Components/Skill';
 import { Projects } from './Components/Project';
+import { Contact } from './Components/Contact';
+import { Footer } from './Components/Footer';
 
 function App() {
   return (
@@ -12,6 +14,8 @@ function App() {
       <Banner/>
       <Skill/>
       <Projects/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
