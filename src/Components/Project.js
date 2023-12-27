@@ -4,6 +4,7 @@ import { ProjectCard } from "./ProjectCard";
 import Long2 from "../Images/Long2.PNG"
 import Longform from "../Data/Longform"
 import Shortform from "../Data/ShortForm"
+import Automation from "../Data/Automation"
 
 // import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -20,7 +21,7 @@ export const Projects = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <h2>Projects</h2>
                   <p>
-                  Now in my years of over 4+ yrs in editing Videos <br></br> I have almost edited all sorts of genre.
+                  Over the course of my extensive 4+ years in video editing!<br></br>I have honed my skills across a diverse range of genres. 
                   So have a look at some of the best videos I have edited for my clients!
                   </p>
                   <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -51,6 +52,7 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
+                      
                       <Tab.Pane eventKey="second">
                         <Row>
                           {Shortform.map((project, index) => {
@@ -58,11 +60,15 @@ export const Projects = () => {
                           })}
                         </Row>
                       </Tab.Pane>
-                      <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
-                    </Tab.Pane>
+                      
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                     
+                    <Row>
+                          {Automation.map((project, index) => {
+                            return <ProjectCard key={index} {...project} />;
+                          })}
+                        </Row>
+
                     </Tab.Pane>
                       {/* Other Tab.Pane components */}
                     </Tab.Content>

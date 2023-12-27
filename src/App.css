@@ -56,6 +56,35 @@ input:focus, textarea:focus, select:focus {
 		padding: 0 150px;
 	}
 }
+@media (max-width: 768px) {
+  nav.navbar {
+    text-align: center;
+  }
+
+  nav.navbar a.navbar-brand,
+  nav.navbar .navbar-nav .nav-link.navbar-link,
+  .navbar-text button {
+    width: 100%;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .navbar-text button {
+    display: block;
+    margin: 0 auto 5px;
+    text-align: center;
+  }
+
+  .social-icon {
+    margin-left: 0;
+  }
+
+  .navbar-toggler-icon {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
 
 p.success {
 	color: green;
@@ -312,7 +341,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   position: relative;
 }
 .skill-slider .item img {
-  width: 50%;
+  width: 90%;
   margin: 0 auto 15px auto;
 }
 .background-image-left {
@@ -394,7 +423,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .nav-link#projects-tabs-tab-third {
   border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 0 55px 55px 0;
+  border-radius: 0 29px 55px 0;
 }
 .proj-imgbx {
   position: relative;
@@ -402,7 +431,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   overflow: hidden;
   margin-bottom: 24px;
 }
-/* .proj-imgbx::after {
+.proj-imgbx::after {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   opacity: 0.85;
@@ -410,9 +439,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
   height: 0;
   transition: 0.4s ease-in-out;
-} */
+}
 .proj-imgbx:hover::before {
   height: 100%;
+}
+@media (max-width: 768px) {
+  .nav-link#projects-tabs-tab-first {
+    border: 0px solid;
+    border-radius: 0px; /* Adjust the value for mobile */
+  }
+  .nav-link#projects-tabs-tab-second {
+    border: 0px solid;
+    border-radius: 0px; /* Adjust the value for mobile */
+  }
+  .nav-link#projects-tabs-tab-third {
+    border: 0px solid;
+    border-radius:0px; /* Adjust the value for mobile */
+  }
+  .proj-imgbx {
+    border-radius: 0px; /* Adjust the value for mobile */
+  }
 }
 
 .awesome-header {
@@ -635,3 +681,4 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+

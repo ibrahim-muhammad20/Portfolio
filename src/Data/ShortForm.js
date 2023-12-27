@@ -25,6 +25,13 @@ export  const ShortForm = [
     
     },
    
+    
+    {
+      title: "Video 6",
+      videoUrl: "https://drive.google.com/uc?id=1DdRcg5tkYYHSoVJGgW_8J7lNwRLkh4Vx",
+    
+    },
+   
     // Add more projects with video URLs and poster image URLs
   ];
   
