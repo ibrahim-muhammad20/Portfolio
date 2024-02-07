@@ -30,15 +30,16 @@ export const Footer = () => {
           <Col xs={12} sm={4}>
             <h5>Services</h5>
             <ul>
-              <li>Video Editing</li>
-              <li>Thumbnail Designing</li>
-              <li>Script Writing</li>
-              <li>Youtube Automation</li>
+              <li>Ad-Editing</li>
+              <li>Podcast-Editing</li>
+              <li>Faceless-Editing</li>
+              <li>ShortForm-Editing</li>
             </ul>
           </Col>
           <Col xs={12} sm={4}>
             <h5>Contact Details</h5>
             <p>Email: ibbibhai007@gmail.com</p>
+            <p>Contact:(+92) 3414436602</p>
             
           </Col>
           <Col xs={12} sm={4}>

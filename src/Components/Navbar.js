@@ -72,7 +72,7 @@ function NavBar() {
             <HashLink to='#connect'>
             <button className="vvd"><span>Let’s Connect</span></button>
             </HashLink>
-
+            {/* <HashLink to='#projects' className='navbar-link' onClick={() => onUpdateActiveLink('projects')}>Short-Form Edits</HashLink> */}
           </span>
         </Navbar.Collapse>
       </Container>

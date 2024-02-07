@@ -74,7 +74,7 @@ export const Banner = () => {
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="awesome-header">Are you looking for a Professional Video Editor?</span>
                   <button onClick={handlePopupButtonClick}>
-                    <span className="tagline">Schedule an Appointment!</span>
+                    <span className="tagline">Contact:(+92) 3414436602 </span>
                   </button>
                   <h1>{`Hi I'm Ibrahim!   `} <span className="txt-rotate" data-period="1000" data-rotate='["Youtube Automation", "Short Form Content", "Long Form Content"]'><span className="wrap">{text}</span></span></h1>
                   <p>As a Content Creator with over 180K followers on social media,<br />Level 1 seller on Fiverr and a Youtube automation expert who has helped 10+ big channels grow, I believe that with my expertise in video editing, I am confident that together we can take your videos to greater heights!</p>
@@ -92,7 +92,7 @@ export const Banner = () => {
                       {/* Calendly popup content */}
                       <InlineWidget
                         url="https://calendly.com/ibbibhai007"
-                        styles={{ height: '1000px' }}
+                        styles={{ height: '500px' }}
                       />
                     </Modal.Body>
                     <Modal.Footer>
