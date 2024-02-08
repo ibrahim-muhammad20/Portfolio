@@ -64,9 +64,9 @@ export const Projects = () => {
                     <Tab.Pane eventKey="third">
                      
                     <Row>
-                          {/* {Automation.map((project, index) => {
+                          {Automation.map((project, index) => {
                             return <ProjectCard key={index} {...project} />;
-                          })} */}
+                          })}
                         </Row>
 
                     </Tab.Pane>
