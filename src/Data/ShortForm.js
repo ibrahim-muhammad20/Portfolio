@@ -42,11 +42,7 @@ export  const ShortForm = [
       videoUrl: "/rjlime/ShortForm/ad1.mp4",
     
     },
-    {
-      title: "Ad-Short2",
-      videoUrl: "/rjlime/ShortForm/ad2.mp4",
     
-    },
   
 
      
