@@ -4,8 +4,46 @@ import { ArrowRightCircle, Instagram, Facebook, Tiktok, Youtube } from 'react-bo
 import TrackVisibility from 'react-on-screen';
 import { InlineWidget } from 'react-calendly';
 import Rjlime2 from "../Images/ibbilogo.png";
+import styled, { keyframes } from 'styled-components';
 
-// import './Banner.css'; // Import the CSS file
+const SocialIconWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  & > svg {
+    margin-right: 5px;
+  }
+
+  & > span {
+    font-size: 14px;
+  }
+`;
+
+const glowingAnimation = keyframes`
+  0% {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255,255,0,0.4);
+  }
+  50% {
+    color: #ffeb3b;
+    text-shadow: 0 0 10px rgba(255,235,59,0.8);
+  }
+  100% {
+    color: #fff;
+    text-shadow: 0 0 5px rgba(255,255,0,0.4);
+  }
+`;
+
+const GlowingText = styled.span`
+  font-size: 16px;
+  animation: ${glowingAnimation} 1.5s linear infinite;
+`;
 
 export const Banner = () => {
   const [loopNum, setLoopNum] = useState(0);
@@ -77,7 +115,7 @@ export const Banner = () => {
                     <span className="tagline">Contact:(+92) 3414436602 </span>
                   </button>
                   <h1>{`Hi I'm Ibrahim!   `} <span className="txt-rotate" data-period="1000" data-rotate='["Youtube Automation", "Short Form Content", "Long Form Content"]'><span className="wrap">{text}</span></span></h1>
-                  <p>As a Content Creator with over 180K followers on social media,<br />Level 1 seller on Fiverr and a Youtube automation expert who has helped 10+ big channels grow, I believe that with my expertise in video editing, I am confident that together we can take your videos to greater heights!</p>
+                  <p>As a <GlowingText>Content Creator with over 180K followers</GlowingText> on social media,<br />Level 1 seller on Fiverr and a Youtube automation expert who has helped 10+ big channels grow, I believe that with my expertise in video editing, I am confident that together we can take your videos to greater heights!</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
 
                   {/* Logos and follower counts */}
@@ -115,28 +153,27 @@ export const Banner = () => {
             </TrackVisibility>
 
             <div className="social-icons">
-      <div className="social-icon" onClick={() => window.open("https://www.instagram.com/ibbibhai/")}>
-        <Instagram size={30} />
-        <span className="follower-count">{instagramFollowers} followers</span>
-      </div>
+              <SocialIconWrapper onClick={() => window.open("https://www.instagram.com/ibbibhai/")}>
+                <Instagram size={30} color="#bc2a8d" />
+                <span className="follower-count">{instagramFollowers} followers</span>
+              </SocialIconWrapper>
 
-      <div className="social-icon" onClick={() => window.open("https://www.facebook.com/ibrahim19BBI")}>
-        <Facebook size={30} />
-        <span className="follower-count">{facebookFollowers} followers</span>
-      </div>
+              <SocialIconWrapper onClick={() => window.open("https://www.facebook.com/ibrahim19BBI")}>
+                <Facebook size={30} color="#3b5998" />
+                <span className="follower-count">{facebookFollowers} followers</span>
+              </SocialIconWrapper>
 
-      <div className="social-icon" onClick={() => window.open("https://www.tiktok.com/")}>
-        <Tiktok size={30} />
-        <span className="follower-count">{tiktokFollowers} followers</span>
-      </div>
+              <SocialIconWrapper onClick={() => window.open("https://www.tiktok.com/")}>
+                <Tiktok size={30} color="#1c9ceb" />
+                <span className="follower-count">{tiktokFollowers} followers</span>
+              </SocialIconWrapper>
 
-      <div className="social-icon" onClick={() => window.open("https://www.youtube.com/@ibbibhai")}>
-        <Youtube size={30} />
-        <span className="follower-count">{ytFollowers} followers</span>
-      </div>
-    </div>
-  </Col>
-          
+              <SocialIconWrapper onClick={() => window.open("https://www.youtube.com/@ibbibhai")}>
+                <Youtube size={30} color="#c4302b" />
+                <span className="follower-count">{ytFollowers} followers</span>
+              </SocialIconWrapper>
+            </div>
+          </Col>
         </Row>
       </Container>
     </section>
