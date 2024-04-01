@@ -1,56 +1,46 @@
-export  const ShortForm = [
-    {
-      title: "Short-1",
-      videoUrl: "/rjlime/ShortForm/Short0.mp4",
-    },
-    {
-      title: "Short-2",
-      videoUrl: "/rjlime/ShortForm/Short1.mp4",
+export const ShortForm = [
   
-    },
-    {
-      title: "Short-3",
-      videoUrl: "/rjlime/ShortForm/Short2.mp4",
   
-    },
-    {
-      title: "Short-4",
-      videoUrl: "/rjlime/ShortForm/Short3.mp4",
   
-    },
-    
-    {
-      title: "Short-5",
-      videoUrl: "/rjlime/ShortForm/Short4.mp4",
-    
-    },
-   
-    
-    {
-      title: "Short-6",
-      videoUrl: "/rjlime/ShortForm/Short5.mp4",
-    
-    },
-    {
+  {
+    title: "ShortForm-1",
+    videoUrl: "https://vimeo.com/924348310",
+  },
+  {
+    title: "ShortForm-2",
+    videoUrl: "https://vimeo.com/924348338",
+  },
+  {
+    title: "ShortForm-3",
+    videoUrl: "https://vimeo.com/929468201?share=copy",
+  },
+  {
+    title: "ShortForm-4",
+    videoUrl: "https://vimeo.com/924348285?share=copy",
+  },
+  {
+    title: "ShortForm-5",
+    videoUrl: "https://vimeo.com/924347644?share=copy",
+  },
+  {
+    title: "ShortForm-6",
+    videoUrl: "https://vimeo.com/929468541?share=copy",
+  },
+  {
+    title: "ShortForm-7",
+    videoUrl: "https://vimeo.com/924381564?share=copy",
+  },
+  {
+    title: "ShortForm-8",
+    videoUrl: "https://vimeo.com/924347578?share=copy",
+  },
+  {
+    title: "ShortForm-9",
+    videoUrl: "https://vimeo.com/924348214?share=copy",
+  },
+  
+ 
+  // Add more projects with Vimeo video URLs
+];
 
-      title: "Short-7",
-      videoUrl: "/rjlime/ShortForm/Short6.mp4",
-    
-    },
-    {
-      title: "Ad-Short1",
-      videoUrl: "/rjlime/ShortForm/ad1.mp4",
-    
-    },
-    
-  
-
-     
-
-    
-   
-
-    // Add more projects with video URLs and poster image URLs
-  ];
-  
-  export default ShortForm;
+export default ShortForm;

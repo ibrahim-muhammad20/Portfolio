@@ -37,6 +37,8 @@ function NavBar() {
     setActiveLink(value);
   }
 
+  const domain = window.location.origin; // Get the current domain
+
   return (
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
@@ -46,28 +48,23 @@ function NavBar() {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-  <div className="d-flex align-items-center">
-    <Nav.Link href="https://ibbibhai.com/#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-    <Nav.Link href="https://ibbibhai.com/#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-    <Nav.Link href="https://ibbibhai.com/#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>
-      Projects
-    </Nav.Link>
-    <Dropdown>
-      <Dropdown.Toggle className="navbar-link" id="dropdown-basic">
-        <span className="visually-hidden">Toggle Dropdown</span>
-      </Dropdown.Toggle>
-      <Dropdown.Menu>
-  <Dropdown.Item href="https://ibbibhai.com/short-form" className={activeLink === 'short-form' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('short-form')}>Short Form</Dropdown.Item>
-  <Dropdown.Item href="https://ibbibhai.com//long-form" className={activeLink === 'long-form' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('long-form')}>Long Form</Dropdown.Item>
-  <Dropdown.Item href="https://ibbibhai.com/faceless-edits" className={activeLink === 'faceless-edits' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('faceless-edits')}>Faceless Edits</Dropdown.Item>
-</Dropdown.Menu>
-
-    </Dropdown>
-  </div>
-</Nav>
-
-
+            <Nav className="me-auto">
+              <div className="d-flex align-items-center">
+                <Nav.Link href={`${domain}/#home`} className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
+                <Nav.Link href={`${domain}/#skills`} className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
+                <Nav.Link href={`${domain}/#projects`} className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+                <Dropdown>
+                  <Dropdown.Toggle className="navbar-link" id="dropdown-basic">
+                    <span className="visually-hidden">Toggle Dropdown</span>
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item href={`${domain}/short-form`} className={activeLink === 'short-form' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('short-form')}>Short Form</Dropdown.Item>
+                    <Dropdown.Item href={`${domain}/long-form`} className={activeLink === 'long-form' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('long-form')}>Long Form</Dropdown.Item>
+                    <Dropdown.Item href={`${domain}/faceless-edits`} className={activeLink === 'faceless-edits' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('faceless-edits')}>Faceless Edits</Dropdown.Item>
+                  </Dropdown.Menu>
+                </Dropdown>
+              </div>
+            </Nav>
             <span className='navbar-text'>
               <div className='social-icon'>
                 <a href='https://www.facebook.com/ibrahim19BBI' target="_blank"><img src={navIcon2} alt=""/></a>

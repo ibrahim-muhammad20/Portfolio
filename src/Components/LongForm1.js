@@ -2,9 +2,12 @@ import React, { useState } from 'react';
 import styled, { keyframes } from 'styled-components';
 import NavBar from './Navbar';
 
-// Sample data for YouTube video IDs
-const videoIds = [
-  "xrXEPGzi-Ew","TA6XZW6eTtg"
+// Sample data for Vimeo video URLs
+const videoUrls = [
+  "https://vimeo.com/924345759","https://vimeo.com/924346022?share=copy",
+  "https://vimeo.com/924345992?share=copy","https://vimeo.com/924345922?share=copy",
+  "https://vimeo.com/924345718?share=copy","https://vimeo.com/924345887?share=copy",
+  "https://vimeo.com/924345843?share=copy"
 ];
 
 const glowAnimation = keyframes`
@@ -34,15 +37,13 @@ const CenteredContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  
 `;
 
 const Title = styled.h1`
-   color: yellow;
-   font-weight: bold;
+  color: yellow;
+  font-weight: bold;
   font-family: 'Brownland', sans-serif; /* Change to the font you prefer */
   padding-top: 120px;
- 
 `;
 
 const VideoWrapper = styled.div`
@@ -75,7 +76,7 @@ const Button = styled.button`
 const LongForm = () => {
   const [showMore, setShowMore] = useState(false);
   
-  const visibleVideos = showMore ? videoIds : videoIds.slice(0, 9);
+  const visibleVideos = showMore ? videoUrls : videoUrls.slice(0, 9);
 
   return (
     <>
@@ -83,13 +84,13 @@ const LongForm = () => {
         <Title>Long-Form Edits</Title>
       </CenteredContainer>
       <Container>
-        {visibleVideos.map(videoId => (
-          <VideoWrapper key={videoId}>
+        {visibleVideos.map(videoUrl => (
+          <VideoWrapper key={videoUrl}>
             <VideoIframe
-              src={`https://www.youtube.com/embed/${videoId}`}
-              title="YouTube video player"
+              src={`https://player.vimeo.com/video/${videoUrl.split('/').pop()}`}
+              title="Vimeo video player"
               frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allow="autoplay; fullscreen"
               allowFullScreen
             ></VideoIframe>
           </VideoWrapper>

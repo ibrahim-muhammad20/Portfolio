@@ -51,16 +51,19 @@ const Title = styled.h3`
   margin-bottom: 10px;
 `;
 
-const ProjectCard = ({ title, videoUrl }) => {
+const VideoPlayer = styled(ReactPlayer)`
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+`;
+
+const ProjectCard2 = ({ title, videoUrl }) => {
   return (
     <Col size={5} sm={6} md={4}>
       <VideoContainer>
         <GlowEffect />
         <Title>{title}</Title>
-        <ReactPlayer
+        <VideoPlayer
           url={videoUrl}
-          width="100%" // Set width to 100%
-          height="auto" // Set height to auto to maintain aspect ratio
           controls={true} // Enable default Vimeo controls
         />
       </VideoContainer>
@@ -68,4 +71,4 @@ const ProjectCard = ({ title, videoUrl }) => {
   );
 };
 
-export default ProjectCard;
+export default ProjectCard2;

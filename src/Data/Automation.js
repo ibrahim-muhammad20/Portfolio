@@ -1,51 +1,51 @@
 
+
   export  const Automation = [
     {
       title: "Boxing Edit",
-      videoUrl: "/rjlime/FacelessChannel/Boxingmain.mp4",
+      videoUrl: "https://vimeo.com/924683141?share=copy",
     },
     {
       title: "Crime-Edit1",
-      videoUrl: "/rjlime/FacelessChannel/Crime_AE.mp4",
+      videoUrl: "https://vimeo.com/924683325?share=copy",
   
     },
     
     {
       title: "NBA-Edit",
-      videoUrl: "/rjlime/FacelessChannel/NBA1.mp4",
+      videoUrl: "https://vimeo.com/924684024?share=copy",
   
     },
     {
       title: "Documentary-Edit",
-      videoUrl: "/rjlime/FacelessChannel/Documentary1.mp4",
+      videoUrl: "https://vimeo.com/924683703?share=copy",
   
     },
     {
       title: "Cricket-Edit",
-      videoUrl: "/rjlime/FacelessChannel/CricketFaceless.mp4",
+      videoUrl: "https://vimeo.com/924683228?share=copy",
   
     },
     {
       title: "NFL-Edit",
-      videoUrl: "/rjlime/FacelessChannel/NFL1.mp4",
+      videoUrl: "https://vimeo.com/924684138?share=copy",
   
     },
     {
       title: "Movies Recap-Edit1",
-      videoUrl: "/rjlime/FacelessChannel/Moviefaceless2.mp4",
+      videoUrl: "https://vimeo.com/924683827?share=copy",
   
     },
     {
-      title: "Celebrity Nice-Edit",
-      videoUrl: "/rjlime/FacelessChannel/Celeb.mp4",
-  
+      title:"Celebrity Niche",
+      videoUrl:"https://vimeo.com/924683585?share=copy",
     },
     {
-      title: "Crime Niche-Edit",
-      videoUrl: "/rjlime/FacelessChannel/Crimefac2.mp4",
-  
-    },
+      title:"Crime Niche",
+      videoUrl:" https://vimeo.com/924683383?share=copy",
+    }
     
+   
   
     // Add more projects with video URLs and poster image URLs
   ];
