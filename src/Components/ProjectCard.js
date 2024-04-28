@@ -53,14 +53,14 @@ const Title = styled.h3`
 
 const ProjectCard = ({ title, videoUrl }) => {
   return (
-    <Col size={5} sm={6} md={4}>
+    <Col size={4} sm={6} md={4}>
       <VideoContainer>
         <GlowEffect />
         <Title>{title}</Title>
         <ReactPlayer
           url={videoUrl}
           width="100%" // Set width to 100%
-          height="auto" // Set height to auto to maintain aspect ratio
+          height="100%" // Set height to auto to maintain aspect ratio
           controls={true} // Enable default Vimeo controls
         />
       </VideoContainer>

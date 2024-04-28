@@ -24,13 +24,18 @@ const glowAnimation = keyframes`
 
 const Container = styled.div`
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr); /* Initially one video per row */
   gap: 20px;
   background-image: url('https://res.cloudinary.com/ddkai331v/image/upload/v1710525982/xkohnw9akvf06myadv8n.png');
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 80px; /* Adding padding */
+  
+  /* Responsive grid for tablets */
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr); /* Two videos per row */
+  }
 `;
 
 const CenteredContainer = styled.div`
@@ -53,6 +58,8 @@ const VideoWrapper = styled.div`
   overflow: hidden;
   border-radius: 20px; /* Rounded corners */
   animation: ${glowAnimation} 2s infinite alternate; /* Add glow animation */
+  max-width: 600px; /* Set maximum width for larger screens */
+  margin: auto; /* Center the video horizontally */
 `;
 
 const VideoIframe = styled.iframe`
